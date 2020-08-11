@@ -1,0 +1,89 @@
+manufacturer,item,stock,category,price,weight_lbs,cubes
+Ashley Furniture,B553BR King Bedroom,7,Bedroom,3798.00,1068.3500,175.89
+Ashley Furniture,B719BR Queen Bedroom,1,Bedroom,2456.00,796.6000,111.86
+Ashley Furniture,D553DR Dining Room,0,Dining,3670.00,1140.8000,139.73
+Ashley Furniture,D803DR Dining Room,1,Dining,3656.00,1217.0000,134.62
+Ashley Furniture,T317-13 3-Pack of Tables,10,Occasional,410.00,107.00,7.99
+Ashley Furniture,T533-13 3-Pack of Tables,5,Occasional,460.00,131.00,9.88
+Corinthian Furniture,26803-10R Rocker Recliner: Commander Steel,5,Recliner,426.00,105.6000,25.42
+Corinthian Furniture,34803 Rocker Recliner: Tundra Ash,7,Recliner,426.00,108.9000,23.87
+Corinthian Furniture,69503-10SG Swivel Glider Recliner: Avalanche Charcoal,3,Recliner,450.00,112.2000,26.03
+Corinthian Furniture,69506-10SG Swivel Glider Recliner: Avalanche Tobacco,0,Recliner,450.00,112.2000,26.03
+Corinthian Furniture,69901-10 Recliner: Waylon Mocha,23,Recliner,446.00,92.4000,25.97
+Corinthian Furniture,71401-10 Recliner: Jamestown Umber,48,Recliner,446.00,105.6000,27.27
+Corinthian Furniture,71407-10 Recliner: Jamestown Smoke,0,Recliner,446.00,105.6000,27.27
+Corinthian Furniture,73901-19HRBT Power Recliner with Bluetooth Speakers: Desert Chocolate,11,Recliner,788.00,147.4000,20.72
+Corinthian Furniture,73904-19HRBT Power Recliner with Bluetooth Speakers: Desert Eclipse,3,Recliner,788.00,147.4000,20.72
+Corinthian Furniture,88801-10G Glider Recliner: Desert Chocolate,57,Recliner,478.00,121.0000,24.87
+Corinthian Furniture,88803-19HR Power Recliner: Desert Charcoal,20,Recliner,654.00,136.4000,24.87
+Corinthian Furniture,88904-10G Glider Recliner: Jamestown Black,3,Recliner,492.00,125.4000,27.15
+Corinthian Furniture,88907-10G Glider Recliner: Jamestown Smoke,0,Recliner,492.00,125.4000,27.15
+Corinthian Furniture,90301-10 Recliner: Softie Driftwood,11,Recliner,678.00,99.0000,26.35
+Corinthian Furniture,94807-19HR Power Recliner: Desert Mushroom,2,Recliner,736.00,127.6000,22.65
+Corinthian Furniture,98701-10G Glider Recliner: Brown & Tobacco,4,Recliner,460.00,121.0000,25.48
+Corinthian Furniture,99901-10 Recliner: Softie Oxblood,0,Recliner,676.00,121.0000,25.62
+Corinthian Furniture,26803 Sofa & Loveseat: Commander Steel,0,Upholstery,1560.00,401.0600,97.96
+Corinthian Furniture,34803 Sofa & Loveseat: Tundra Ash,0,Upholstery,1560.00,411.4000,99.14
+Corinthian Furniture,69503 Sofa & Glider Loveseat: Avalanche Charcoal,0,Upholstery,1616.00,477.4000,105.05
+Corinthian Furniture,69506 Sofa & Glider Loveseat: Avalanche Tobacco,0,Upholstery,1616.00,447.4000,105.05
+Corinthian Furniture,69901 Sofa & Glider Loveseat: Waylon Mocha,0,Upholstery,1702.00,363.0000,101.24
+Corinthian Furniture,71401 Sofa & Loveseat: Jamestown Umber,0,Upholstery,1656.00,415.8000,93.58
+Corinthian Furniture,71407 Sofa & Loveseat: Jamestown Smoke,0,Upholstery,1656.00,415.8000,93.58
+Corinthian Furniture,73901HR Power Sofa & Power Loveseat: Desert Chocolate,0,Upholstery,2622.00,552.2000,88.49
+Corinthian Furniture,73904HR Power Sofa & Power Loveseat: Desert Eclipse,0,Upholstery,2622.00,552.2000,88.49
+Corinthian Furniture,88801 Sofa & Loveseat: Desert Chocolate,39,Upholstery,1972.00,467.5000,101.92
+Corinthian Furniture,88803HR Power Sofa & Power Loveseat: Desert Charcoal,0,Upholstery,2370.00,526.6800,101.92
+Corinthian Furniture,88907 Sofa & Loveseat: Jamestown Smoke,0,Upholstery,1732.00,441.8000,102.11
+Corinthian Furniture,90301 Sofa & Loveseat: Softie Driftwood,0,Upholstery,2496.00,385.0000,99.97
+Corinthian Furniture,94807HR Power Sofa & Power Loveseat: Desert Mushroom,0,Upholstery,2530.00,503.8000,90.95
+Corinthian Furniture,98701 Sofa & Glider Loveseat: Brown & Tobacco,0,Upholstery,1708.00,467.5000,102.53
+Corinthian Furniture,99901 Sofa & Glider Loveseat: Softie Oxblood,0,Upholstery,2484.00,458.7000,100.62
+Hughes Furniture,17200-13 3-Pack of Tables,3,Occasional,442.00,120.0000,12.40
+Hughes Furniture,3177 3-Pack of Tables,0,Occasional,350.00,110.0000,8.30
+Hughes Furniture,7925-13 3-Pack of Tables,2,Occasional,362.00,110.0000,8.30
+Hughes Furniture,10180 Sofa & Loveseat: Avenger Driftwood,0,Upholstery,1090.00,255.0000,94.90
+Hughes Furniture,10180 Sofa & Loveseat: Avenger Otter,0,Upholstery,1090.00,255.0000,94.90
+Hughes Furniture,1085 Sofa & Loveseat: Sienna Chocolate,0,Upholstery,722.00,200.0000,83.40
+Hughes Furniture,11900 Sofa & Loveseat: Wexler Splash,0,Upholstery,838.00,204.0000,81.70
+Hughes Furniture,12500 Sofa & Loveseat: Kempsey Ocean,0,Upholstery,1068.00,214.0000,79.20
+Hughes Furniture,12500 Sofa & Loveseat: Perspective Eggnog,0,Upholstery,1114.00,214.0000,79.20
+Hughes Furniture,15700 Sofa & Loveseat: Bing Indigo,0,Upholstery,930.00,210.0000,89.90
+Hughes Furniture,16150 Sofa & Loveseat: Bing Ash,0,Upholstery,976.00,210.0000,82.50
+Hughes Furniture,16150 Sofa & Loveseat: Bing Barley,0,Upholstery,976.00,210.0000,82.50
+Hughes Furniture,16200 Sofa & Loveseat: Jitterbug Alabaster,0,Upholstery,998.00,257.0000,82.50
+Hughes Furniture,16300 Sofa & Loveseat: Namaste Royal,0,Upholstery,1136.00,240.0000,89.20
+Hughes Furniture,17200 Sofa & Loveseat: Phineas Driftwood,0,Upholstery,1320.00,210.0000,107.30
+Hughes Furniture,17400 Sofa & Loveseat: Ridgeline Brownie,0,Upholstery,1160.00,265.0000,115.50
+Hughes Furniture,17410 Sofa & Loveseat: Jetson Ginger,0,Upholstery,1160.00,265.0000,115.50
+Hughes Furniture,17450 Sofa & Loveseat: Goliath Mica,0,Upholstery,1160.00,210.0000,115.50
+Hughes Furniture,2300 Sofa & Loveseat: Parker Sage,0,Upholstery,1136.00,265.0000,82.50
+Hughes Furniture,2655 Sofa & Loveseat: Bing Antler,0,Upholstery,998.00,230.0000,101.50
+Hughes Furniture,3400 Sofa & Loveseat: Element Obsidian,0,Upholstery,1090.00,245.0000,93.20
+Hughes Furniture,3700 Sofa & Loveseat: Jitterbug Gray,0,Upholstery,930.00,210.0000,82.50
+Hughes Furniture,4050 Sofa & Loveseat: Max Ash,0,Upholstery,986.00,255.0000,82.50
+Hughes Furniture,6800 Sofa & Loveseat: Jitterbug Red,0,Upholstery,838.00,210.0000,82.50
+Hughes Furniture,7650 Sofa & Loveseat: Momentum Khaki,0,Upholstery,1124.00,271.0000,82.50
+Hughes Furniture,7650 Sofa & Loveseat: Momentum Magenta,0,Upholstery,1124.00,271.0000,82.50
+Hughes Furniture,7685 Sofa & Loveseat: Silas Raisin,0,Upholstery,1170.00,283.0000,82.50
+Hughes Furniture,7925 Sofa & Loveseat: San Marino Ebony,0,Upholstery,1160.00,265.0000,82.50
+Liberty Furniture,244BR King Bedroom,12,Bedroom,3246.00,773.0000,125.17
+Liberty Furniture,244BR Queen Bedroom,5,Bedroom,2746.00,660.0000,107.91
+Liberty Furniture,816BR King Bedroom,8,Bedroom,2616.00,791.0000,105.7
+Liberty Furniture,816BR Queen Bedroom,13,Bedroom,2278.00,684.0000,90.44
+Liberty Furniture,244DR Dining Room: 8 Piece,1,Dining,2632.00,544.0000,78.85
+Liberty Furniture,244DR Dining Room: 9 Piece,3,Dining,3218.00,676.0000,110.58
+Liberty Furniture,652DR Dining Room: 8 Piece,2,Dining,2600.00,645.0000,75.15
+Lifestyle Furniture,B6377BR King Bedroom,0,Bedroom,1928.00,661.3900,90.41
+Lifestyle Furniture,B6377BR Queen Bedroom,0,Bedroom,1604.00,586.7900,77.45
+Lifestyle Furniture,B7131ABR King Bedroom: Brown,3,Bedroom,2082.00,709.8900,709.89
+Lifestyle Furniture,B7131ABR Queen Bedroom: Brown,0,Bedroom,1816.00,619.5000,619.50
+Lifestyle Furniture,B7131WBR King Bedroom: White,6,Bedroom,2082.00,709.8900,709.89
+Lifestyle Furniture,B7131WBR Queen Bedroom: White,0,Bedroom,1816.00,619.5000,619.50
+Lifestyle Furniture,B7293BR King Bedroom,1,Bedroom,2196.00,696.6600,696.66
+Lifestyle Furniture,B8100LBR King Bedroom,0,Bedroom,1290.00,616.1900,89.40
+Lifestyle Furniture,B8100LBR Queen Bedroom,0,Bedroom,1084.00,539.0300,78.10
+Lifestyle Furniture,DC6377 Dinette,12,Dining,672.00,262.3500,22.32
+Lifestyle Furniture,DC6377-DVX Server,22,Dining,476.00,123.4600,25.26
+Lifestyle Furniture,DC8701 Pub Dinette: Brown,0,Dining,232.00,118.6100,9.90
+Lifestyle Furniture,DC8701 Pub Dinette: Red,0,Dining,232.00,118.6100,9.90
+Lifestyle Furniture,T6377O Set 3-Pack of Tables,0,Occasional,588.00,227.0800,26.25
