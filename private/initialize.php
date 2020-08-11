@@ -31,6 +31,7 @@
   spl_autoload_register('my_autoload');
   
   require_once('functions.php');
+  require_once('db_credentials.php');
   
   $errors = [];
 ?>
