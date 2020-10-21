@@ -1,4 +1,6 @@
 <?php
+  require_once('db_credentials.php');
+  
   function db_connect() {
     $connection = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     confirm_db_connect($connection);
@@ -11,6 +13,12 @@
       $msg .= $connection->connect_error;
       $msg .= '" (' . $connection->connect_errno . ')';
       exit($msg);
+    }
+  }
+  
+  function db_disconnect($connection) {
+    if(isset($connection)) {
+      $connection->close();
     }
   }
 ?>
