@@ -1,4 +1,4 @@
-manufacturer,item,stock,category,price,weight_lbs,cubes
+brand,item,stock,category,price,weight_lbs,cubes
 Ashley Furniture,B553BR King Bedroom,7,Bedroom,3798.00,1068.3500,175.89
 Ashley Furniture,B719BR Queen Bedroom,1,Bedroom,2456.00,796.6000,111.86
 Ashley Furniture,D553DR Dining Room,0,Dining,3670.00,1140.8000,139.73

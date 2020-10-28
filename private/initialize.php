@@ -34,6 +34,5 @@
   require_once('db_functions.php');
   
   $db = db_connect();
-  
-  $errors = [];
+  DatabaseObject::set_database($db);
 ?>

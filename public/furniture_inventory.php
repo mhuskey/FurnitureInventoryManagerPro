@@ -1,5 +1,10 @@
 <?php require_once('../private/initialize.php'); ?>
 
+<?php
+  $sql  = "SELECT * FROM furniture";
+  $furniture = Furniture::find_by_sql($sql);
+?>
+
 <?php $page_title = 'Inventory'; ?>
 <?php include(SHARED_PATH . '/public_header.php'); ?>
 
@@ -17,7 +22,7 @@
                 <table class="table table-striped table-bordered table-hover">
                   <thead class="thead-dark">
                     <tr>
-                      <th>Manufacturer</th>
+                      <th>Brand</th>
                       <th>Item</th>
                       <th>Stock</th>
                       <th>Category</th>
@@ -37,7 +42,7 @@
                       <?php $furniture = new Furniture($args) ?>
                       <tbody>
                         <tr>
-                          <td class="align-middle"><?php echo h($furniture->manufacturer); ?></td>
+                          <td class="align-middle"><?php echo h($furniture->brand); ?></td>
                           <td class="align-middle"><?php echo h($furniture->item); ?></td>
                           <td class="align-middle"><?php echo h($furniture->stock); ?></td>
                           <td class="align-middle"><?php echo h($furniture->category); ?></td>

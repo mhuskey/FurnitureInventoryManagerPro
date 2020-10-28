@@ -1,13 +1,26 @@
 <?php
-  class Furniture {
-    public $manufacturer;
+  class Furniture extends DatabaseObject {
+    static protected $table_name = 'furniture';
+    static protected $db_columns = ['id', 'brand', 'item', 'stock', 'category', 'price', 'weight_lbs', 'cubes'];
+    
+    public $id;
+    public $brand;
     public $item;
     public $stock;
     public $category;
-    public $cubes;
     public $price;
+    public $weight_lbs;
+    public $cubes;
     
-    protected $weight_lbs;
+    public function __construct($args=[]) {
+      $this->brand      = $args['brand']        ?? '';
+      $this->item       = $args['item']         ?? '';
+      $this->stock      = $args['stock']        ??  0;
+      $this->category   = $args['category']     ?? '';
+      $this->price      = $args['price']        ?? 0.0;
+      $this->weight_lbs = $args['weight_lbs']   ?? 0.0;
+      $this->cubes      = $args['cubes']        ?? 0.0;
+    }
     
     public const CATEGORIES = [
       'Bedroom',
@@ -16,16 +29,6 @@
       'Recliner',
       'Occasional'
     ];
-    
-    public function __construct($args=[]) {
-      $this->manufacturer = $args['manufacturer'] ?? '';
-      $this->item         = $args['item']         ?? '';
-      $this->stock        = $args['stock']        ??  0;
-      $this->category     = $args['category']     ?? '';
-      $this->weight_lbs   = $args['weight_lbs']   ?? 0.0;
-      $this->cubes        = $args['cubes']        ?? 0.0;
-      $this->price        = $args['price']        ?? 0.0;
-    }
     
     public function weight_lbs() {
       return number_format($this->weight_lbs, 2) . ' lbs';
