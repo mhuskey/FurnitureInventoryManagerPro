@@ -35,6 +35,19 @@
     if($valid_upload == 1) {
       $tmp_name = $_FILES['inventory']['tmp_name'];
       if(move_uploaded_file($tmp_name, $upload_file)) {
+        // Load CSV file and import it into the
+        // `furniture` table of MySQL database
+        $path = PRIVATE_PATH . '/furniture_inventory.csv';
+        $sql = "LOAD DATA LOCAL INFILE '" . $path . "'
+        INTO TABLE furniture
+        FIELDS TERMINATED BY ','
+        OPTIONALLY ENCLOSED BY '\"'
+        LINES TERMINATED BY '\n'
+        IGNORE 1 LINES
+        (id, brand, item, stock, category, price, weight_lbs, cubes)";
+        
+        $db->query($sql);
+        
         redirect_to(url_for('/furniture_inventory.php'));
       }
     }
@@ -49,8 +62,6 @@
             <div class="row">
               <div class="col-sm-10 offset-sm-1">
                 <h2>Update Inventory</h2>
-                
-                <?php echo display_errors($errors); ?>
                 
                 <p>Select and upload a CSV file from your computer to update the <a href="<?php echo url_for('/furniture_inventory.php'); ?>">Furniture Inventory page</a>.</p>
                 <br />

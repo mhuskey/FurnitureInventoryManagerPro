@@ -22,6 +22,7 @@
                 <table class="table table-striped table-bordered table-hover">
                   <thead class="thead-dark">
                     <tr>
+                      <th>ID</th>
                       <th>Brand</th>
                       <th>Item</th>
                       <th>Stock</th>
@@ -32,25 +33,17 @@
                     </tr>
                   </thead>
                   
-                  <?php
-                    $parser = new ParseCSV(PRIVATE_PATH . '/furniture_inventory.csv');
-                    $furniture_array = $parser->parse();
-                  ?>
-                  
-                  <?php  
-                    foreach ($furniture_array as $args) { ?>
-                      <?php $furniture = new Furniture($args) ?>
-                      <tbody>
-                        <tr>
-                          <td class="align-middle"><?php echo h($furniture->brand); ?></td>
-                          <td class="align-middle"><?php echo h($furniture->item); ?></td>
-                          <td class="align-middle"><?php echo h($furniture->stock); ?></td>
-                          <td class="align-middle"><?php echo h($furniture->category); ?></td>
-                          <td class="align-middle"><?php echo h($furniture->weight_lbs()) . ' / ' . h($furniture->weight_kgs()); ?></td>
-                          <td class="align-middle"><?php echo h($furniture->cubes); ?></td>
-                          <td class="align-middle"><?php echo '$' . h($furniture->price); ?></td>
-                        </tr>
-                      </tbody>
+                  <?php foreach($furniture as $item) { ?>
+                    <tr>
+                      <td><?php echo h($item->id); ?></td>
+                      <td><?php echo h($item->brand); ?></td>
+                      <td><?php echo h($item->item); ?></td>
+                      <td><?php echo h($item->stock); ?></td>
+                      <td><?php echo h($item->category); ?></td>
+                      <td><?php echo h('$' . number_format($item->price, 2)); ?></td>
+                      <td><?php echo h($item->weight_lbs); ?></td>
+                      <td><?php echo h($item->cubes); ?></td>
+                    </tr>
                   <?php } ?>
                 </table>
                 <br />

@@ -3,6 +3,7 @@
   
   function db_connect() {
     $connection = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    mysqli_options($connection, MYSQLI_OPT_LOCAL_INFILE, true);
     confirm_db_connect($connection);
     return $connection;
   }
