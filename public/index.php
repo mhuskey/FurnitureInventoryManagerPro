@@ -10,7 +10,6 @@
             <div class="row">
               <div class="col-sm-10 offset-sm-1 text-center align-middle">
                   <a href="<?php echo url_for('/furniture_inventory.php'); ?>"><button type="button" class="btn btn-outline-primary">View Our Inventory</button></a>
-                  <a href="<?php echo url_for('/upload.php'); ?>"><button type="button" class="btn btn-outline-primary">Upload Inventory</button></a>
                   <a href="<?php echo url_for('/about.php'); ?>"><button type="button" class="btn btn-outline-primary">About</button></a>
               </div>
               
