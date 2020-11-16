@@ -35,17 +35,29 @@
     if($valid_upload == 1) {
       $tmp_name = $_FILES['inventory']['tmp_name'];
       if(move_uploaded_file($tmp_name, $upload_file)) {
-        // Load CSV file and import it into the
-        // `furniture` table of MySQL database
+        // Delete existing `furniture` table and
+        // create new `furniture` table from it
+        $sql  = "DROP TABLE furniture ";
+        $sql .= "CREATE TABLE furniture (";
+        $sql .= "id INT(11) AUTO_INCREMENT PRIMARY KEY, ";
+        $sql .= "brand VARCHAR(255) NOT NULL, ";
+        $sql .= "item VARCHAR(255) NOT NULL, ";
+        $sql .= "stock INT(4) NOT NULL, ";
+        $sql .= "category VARCHAR(255) NOT NULL, ";
+        $sql .= "price DECIMAL(7,2) NOT NULL, ";
+        $sql .= "weight_lbs DECIMAL(7,2) NOT NULL, ";
+        $sql .= "cubes DECIMAL(7,2) NOT NULL) ";
+        $db->query($sql);
+        
+        // Load CSV file and populate `furniture` table
         $path = PRIVATE_PATH . '/furniture_inventory.csv';
-        $sql = "LOAD DATA LOCAL INFILE '" . $path . "'
+        $sql  = "LOAD DATA LOCAL INFILE '" . $path . "'
         INTO TABLE furniture
         FIELDS TERMINATED BY ','
         OPTIONALLY ENCLOSED BY '\"'
         LINES TERMINATED BY '\n'
         IGNORE 1 LINES
         (id, brand, item, stock, category, price, weight_lbs, cubes)";
-        
         $db->query($sql);
         
         redirect_to(url_for('/furniture_inventory.php'));
@@ -67,6 +79,9 @@
                 <br />
                 
                 <h3>Import CSV</h3>
+                <hr />
+                <h4 class="text-danger">Warning: uploading a CSV will delete and replace all current furniture items.</h4>
+                <h4 class="text-danger">This process is permanent and cannot be reversed.</h4>
                 <hr />
                 <form action="upload.php" method="post" enctype="multipart/form-data">
                   <input type="file" name="inventory" class="form-control-file">
