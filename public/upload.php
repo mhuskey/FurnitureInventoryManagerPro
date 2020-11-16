@@ -35,10 +35,13 @@
     if($valid_upload == 1) {
       $tmp_name = $_FILES['inventory']['tmp_name'];
       if(move_uploaded_file($tmp_name, $upload_file)) {
-        // Delete existing `furniture` table and
-        // create new `furniture` table from it
-        $sql  = "DROP TABLE furniture ";
-        $sql .= "CREATE TABLE furniture (";
+        // Delete existing `furniture` table
+        $sql  = "DROP TABLE furniture;";
+        echo $sql . "<br /><br />";
+        $db->query($sql);
+        
+        // Create new `furniture` table
+        $sql  = "CREATE TABLE furniture (";
         $sql .= "id INT(11) AUTO_INCREMENT PRIMARY KEY, ";
         $sql .= "brand VARCHAR(255) NOT NULL, ";
         $sql .= "item VARCHAR(255) NOT NULL, ";
@@ -46,7 +49,7 @@
         $sql .= "category VARCHAR(255) NOT NULL, ";
         $sql .= "price DECIMAL(7,2) NOT NULL, ";
         $sql .= "weight_lbs DECIMAL(7,2) NOT NULL, ";
-        $sql .= "cubes DECIMAL(7,2) NOT NULL) ";
+        $sql .= "cubes DECIMAL(7,2) NOT NULL);";
         $db->query($sql);
         
         // Load CSV file and populate `furniture` table
