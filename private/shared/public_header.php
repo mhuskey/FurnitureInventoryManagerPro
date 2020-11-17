@@ -23,3 +23,20 @@
         <h1 class="no-decoration">Furniture Inventory Manager Pro</h1>
       </a>
     </header>
+    
+    <!-- Main Content -->
+    <main role="main">
+      <section>
+        <div class="main-content">
+          <div class="row">
+            <div class="col-sm-10 offset-sm-1 text-center align-middle">
+              <a href="<?php echo url_for('/furniture_inventory.php'); ?>"><button type="button" class="btn btn-outline-primary">View Our Inventory</button></a>
+              <a href="<?php echo url_for('/about.php'); ?>"><button type="button" class="btn btn-outline-primary">About</button></a>
+              <a href="<?php echo url_for('/staff/login.php'); ?>"><button type="button" class="btn btn-outline-danger">Log In</button></a>
+              <a href="<?php echo url_for('/staff/signup.php'); ?>"><button type="button" class="btn btn-outline-danger">Sign Up</button></a>
+            </div>
+          </div>
+          <hr><br /><br />
+        </div>
+      </section>
+    </main>
