@@ -39,6 +39,17 @@ a:hover {
   text-decoration: none;
 }
 
+.message {
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+li {
+  display: inline;
+  margin-right: 2rem;
+  font-size: 2.5rem;
+}
+
 
 /* tables
   ------------------------- */
