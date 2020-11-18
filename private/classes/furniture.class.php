@@ -38,5 +38,33 @@
       $weight_lbs = floatval($this->weight_lbs) * 0.45359237;
       return number_format($weight_lbs, 2) . ' kgs';
     }
+    
+    protected function validate() {
+      $this->errors = [];
+      
+      if(is_blank($this->brand)) {
+        $this->errors[] = 'Brand cannot be blank';
+      }
+      if(is_blank($this->item)) {
+        $this->errors[] = 'Item cannot be blank';
+      }
+      if(is_blank($this->stock)) {
+        $this->errors[] = 'Stock cannot be blank';
+      }
+      if(is_blank($this->category)) {
+        $this->errors[] = 'Category cannot be blank';
+      }
+      if(is_blank($this->price)) {
+        $this->errors[] = 'Price cannot be blank';
+      }
+      if(is_blank($this->weight_lbs)) {
+        $this->errors[] = 'Weight cannot be blank';
+      }
+      if(is_blank($this->cubes)) {
+        $this->errors[] = 'Cubes cannot be blank';
+      }
+      
+      return $this->errors;
+    }
   }
 ?>
