@@ -41,22 +41,4 @@
   function is_get_request() {
     return $_SERVER['REQUEST_METHOD'] == 'GET';
   }
-  
-  function display_errors($errors = array()) {
-    $output = '';
-    
-    if(!empty($errors)) {
-      $output .= '<div class="alert alert-danger" id="message" role="alert">';
-      $output .= '<h5 class="alert-heading">Please fix the following errors:</h5>';
-      $output .= '<ul>';
-      
-      foreach ($errors as $error) {
-        $output .= "<li>" . h($error) . "</li>";
-      }
-      
-      $output .= "</ul>";
-      $output .= "</div>";
-    }
-    return $output;
-  }
 ?>
