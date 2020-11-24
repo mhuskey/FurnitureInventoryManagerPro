@@ -33,7 +33,7 @@
   }
 ?>
 
-<?php $page_title = 'Log in'; ?>
+<?php $page_title = 'Log In'; ?>
 <?php include(SHARED_PATH . '/public_header.php'); ?>
 
   <!-- Main Content -->

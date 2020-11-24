@@ -16,8 +16,8 @@
       session_regenerate_id();
       
       if($admin) {
-        $this->admin_id = $_SESSION['admin_id'] = $admin->id;
-        $this->username = $_SESSION['username'] = $admin->username;
+        $this->admin_id   = $_SESSION['admin_id']   = $admin->id;
+        $this->username   = $_SESSION['username']   = $admin->username;
         $this->last_login = $_SESSION['last_login'] = time();
       }
       
