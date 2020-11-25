@@ -1,34 +1,29 @@
 <?php
   require_once('../../private/initialize.php');
   
-  $errors = [];
+  // Create temporary admin object so that `display_errors()`
+  // doens't result in warning for non-POST requests
+  $admin = new admin();
+  
+  // If logged in, then redirect admin to `staff/index.php`
+  if($session->is_logged_in()) {
+    redirect_to(url_for('/staff/index.php'));
+  }
   
   if(is_post_request()) {
-    // Log out in case alreay logged in
-    // log_out_admin();
-    
     // Create record using POST parameters
     $args = $_POST['admin'];
-    
     $admin = new admin($args);
+    
     $result = $admin->save();
     
     if($result === true) {
+      // Log in new admin
       $session->login($admin);
       $_SESSION['message'] = 'Sign up successful!';
-    } else {
-      $errors = $result;
+      redirect_to(url_for('/staff/index.php'));
     }
     
-  } else {
-    // display the blank form
-    $admin = [];
-    $admin['first_name']         = '';
-    $admin['last_name']          = '';
-    $admin['email']              = '';
-    $admin['username']           = '';
-    $admin['password']           = '';
-    $admin['confirm_password']   = '';
   }
 ?>
 
@@ -44,7 +39,7 @@
               <div class="col-sm-10 offset-sm-1">
                 <h1>Sign Up</h1>
                 
-                <?php echo display_errors($errors); ?>
+                <?php echo display_errors($admin->errors); ?>
                 
                 <form action="<?php echo url_for('/staff/signup.php'); ?>" method="post">
                   <div class="form-group">

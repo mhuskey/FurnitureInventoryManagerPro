@@ -24,6 +24,7 @@
       if($admin != false && $admin->verify_password($password)) {
         // Mark admin as logged in
         $session->login($admin);
+        $_SESSION['message'] = 'Log in successful!';
         redirect_to(url_for('/staff/index.php'));
       } else {
         // username not found or password does not match
