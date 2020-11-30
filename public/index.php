@@ -1,6 +1,12 @@
 <?php require_once('../private/initialize.php'); ?>
 
-<?php include(SHARED_PATH . '/public_header.php'); ?>
+<?php
+  if($session->is_logged_in()) {
+    include(SHARED_PATH . '/staff_header.php');
+  } else {
+    include(SHARED_PATH . '/public_header.php');
+  }
+?>
 
     <!-- Main Content -->
     <main role="main">
