@@ -33,9 +33,9 @@
                       <th>Item</th>
                       <th>Stock</th>
                       <th>Category</th>
+                      <th>Price</th>
                       <th>Weight</th>
                       <th>Cubes</th>
-                      <th>Price</th>
                     </tr>
                   </thead>
                   

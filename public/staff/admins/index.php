@@ -7,7 +7,7 @@
   $admins = Admin::find_by_sql($sql);
 ?>
 
-<?php $page_title = 'Admins'; ?>
+<?php $page_title = 'Admins Index'; ?>
 <?php include(SHARED_PATH . '/staff_header.php'); ?>
 
     <!-- Main Content -->
@@ -20,7 +20,7 @@
                 <h1>Admins</h1>
                 
                 <div class="actions">
-                  <a class="action" href="<?php echo url_for('/staff/admins/new.php'); ?>">Add Admin</a>
+                  <a href="<?php echo url_for('/staff/admins/new.php'); ?>"><button type="button" class="btn btn-primary">Create Admin</button></a>
                 </div>
                 
                 <table class="table table-striped table-bordered table-hover">

@@ -30,11 +30,11 @@
         <div class="main-content">
           <div class="row">
             <div class="col-sm-10 offset-sm-1 text-center align-middle">
-              <a href="<?php echo url_for('/furniture_inventory.php'); ?>"><button type="button" class="btn btn-outline-primary">View Our Inventory</button></a>
-              <a href="<?php echo url_for('/about.php'); ?>"><button type="button" class="btn btn-outline-primary">About</button></a>
-              <a href="<?php echo url_for('/staff/furniture/index.php'); ?>"><button type="button" class="btn btn-outline-primary">Furniture</button></a>
-              <a href="<?php echo url_for('/staff/admins/index.php'); ?>"><button type="button" class="btn btn-outline-primary">Admins</button></a>
-              <a href="<?php echo url_for('/staff/logout.php'); ?>"><button type="button" class="btn btn-outline-danger">Log Out</button></a>
+              <a href="<?php echo url_for('/furniture_inventory.php'); ?>"><button type="button" class="btn btn-outline-primary btn-margin">View Our Inventory</button></a>
+              <a href="<?php echo url_for('/about.php'); ?>"><button type="button" class="btn btn-outline-primary btn-margin">About</button></a>
+              <a href="<?php echo url_for('/staff/furniture/index.php'); ?>"><button type="button" class="btn btn-outline-primary btn-margin">Furniture</button></a>
+              <a href="<?php echo url_for('/staff/admins/index.php'); ?>"><button type="button" class="btn btn-outline-primary btn-margin">Admins</button></a>
+              <a href="<?php echo url_for('/staff/logout.php'); ?>"><button type="button" class="btn btn-outline-danger btn-margin">Log Out</button></a>
             </div>
           </div>
           <hr><br /><br />

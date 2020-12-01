@@ -77,7 +77,7 @@
                   </p>
                   <br />
                   
-                  <button type="submit" class="btn btn-primary no-margin">Sign Up</button>
+                  <button type="submit" class="btn btn-primary btn-margin btn-no-left-margin">Sign Up</button>
                 </form>
                 
                 <br />

@@ -59,7 +59,7 @@
                     <input type="password" class="form-control" name="password" />
                   </div>
                   
-                  <button type="submit" class="btn btn-primary no-margin">Log In</button><br />
+                  <button type="submit" class="btn btn-primary btn-margin btn-no-left-margin">Log In</button><br />
                 </form>
                 
                 <p>Not a member? <a href="<?php echo url_for('/staff/signup.php'); ?>">Sign up here</a>.</p>

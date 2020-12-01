@@ -2,7 +2,7 @@
 
 <?php require_login(); ?>
 
-<?php $page_title = 'Upload CSV'; ?>
+<?php $page_title = 'Upload Furniture CSV'; ?>
 <?php include(SHARED_PATH . '/public_header.php'); ?>
 
 <?php
