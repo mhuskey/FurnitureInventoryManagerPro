@@ -28,12 +28,11 @@
                 <p>Past experience includes Ruby on Rails, C#, Swift, and iOS development.</p>
                 <br /><br />
                 
-                <h3>View my portfolio <a href="https://matthewhuskey.com" target="_blank">here</a>.
-                </h3>
-                <br /><br />
-                
-                <h3>Interested in hiring me? <a href="mailto:matthewhuskey@me.com">Email Me</a>
-                </h3>
+                <p class="text-center">
+                  <a href="https://matthewhuskey.com" target="_blank"><button type="button" class="btn btn-outline-primary btn-margin btn-no-left-margin">My Portfolio</button></a>
+                  
+                  <a href="mailto:matthewhuskey@me.com"><button type="button" class="btn btn-outline-danger btn-margin">Contact Me</button></a>
+                </p>
               </div>
             </div>
           </div>

@@ -54,7 +54,7 @@
                 </table>
                 <br />
                 <p>
-                  <a href="<?php echo url_for('/staff/furniture/upload.php'); ?>"><button type="button" class="btn btn-outline-primary">Upload Inventory</button></a>
+                  <a href="<?php echo url_for('/staff/furniture/upload.php'); ?>"><button type="button" class="btn btn-outline-primary btn-margin">Upload Inventory</button></a>
                 </p>
               </div>
             </div>
