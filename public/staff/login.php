@@ -43,8 +43,8 @@
         <div class="main-content">
           <div class="container min-vh-100">
             <div class="row">
-              <div class="col-sm-10 offset-sm-1">
-                <h1>Log In</h1>
+              <div class="col align-self-center col-10 offset-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <h1 class="text-center">Log In</h1>
                 
                 <?php echo display_errors($errors); ?>
                 
@@ -59,7 +59,7 @@
                     <input type="password" class="form-control" name="password" />
                   </div>
                   
-                  <button type="submit" class="btn btn-primary btn-margin btn-no-left-margin">Log In</button><br />
+                  <button type="submit" class="btn btn-primary btn-block btn-margin btn-no-left-margin">Log In</button><br />
                 </form>
                 
                 <p>Not a member? <a href="<?php echo url_for('/staff/signup.php'); ?>">Sign up here</a>.</p>

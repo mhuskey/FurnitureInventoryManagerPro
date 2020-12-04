@@ -36,8 +36,8 @@
         <div class="main-content">
           <div class="container min-vh-100">
             <div class="row">
-              <div class="col-sm-10 offset-sm-1">
-                <h1>Sign Up</h1>
+              <div class="col align-self-center col-10 offset-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <h1 class="text-center">Sign Up</h1>
                 
                 <?php echo display_errors($admin->errors); ?>
                 
@@ -77,7 +77,7 @@
                   </p>
                   <br />
                   
-                  <button type="submit" class="btn btn-primary btn-margin btn-no-left-margin">Sign Up</button>
+                  <button type="submit" class="btn btn-primary btn-block btn-margin btn-no-left-margin">Sign Up</button>
                 </form>
                 
                 <br />
