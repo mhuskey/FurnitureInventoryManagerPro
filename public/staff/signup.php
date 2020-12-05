@@ -4,6 +4,7 @@
   // Create temporary admin object so that `display_errors()`
   // doens't result in warning for non-POST requests
   $admin = new admin();
+  $failed = false;
   
   // If logged in, then redirect admin to `staff/index.php`
   if($session->is_logged_in()) {
@@ -22,6 +23,8 @@
       $session->login($admin);
       $_SESSION['message'] = 'Sign up successful!';
       redirect_to(url_for('/staff/index.php'));
+    } else {
+      $failed = true;
     }
     
   }
@@ -44,22 +47,22 @@
                 <form action="<?php echo url_for('/staff/signup.php'); ?>" method="post">
                   <div class="form-group">
                     <label for="inputFirstName">First Name</label>
-                    <input type="text" class="form-control" name="admin[first_name]" autofocus />
+                    <input type="text" class="form-control" name="admin[first_name]" autofocus value="<?php if($failed===true) { echo h($admin->first_name); } ?>" />
                   </div>
                   
                   <div class="form-group">
                     <label for="inputLastName">Last Name</label>
-                    <input type="text" class="form-control" name="admin[last_name]" />
+                    <input type="text" class="form-control" name="admin[last_name]" value="<?php if($failed===true) { echo h($admin->last_name); } ?>" />
                   </div>
                   
                   <div class="form-group">
                     <label for="inputEmail">Email Address</label>
-                    <input type="email" class="form-control" name="admin[email]" />
+                    <input type="email" class="form-control" name="admin[email]" value="<?php if($failed===true) { echo h($admin->email); } ?>" />
                   </div>
                   
                   <div class="form-group">
                     <label for="inputUsername">Username</label>
-                    <input type="text" class="form-control" name="admin[username]" />
+                    <input type="text" class="form-control" name="admin[username]" value="<?php if($failed===true) { echo h($admin->username); } ?>" />
                   </div>
                   
                   <div class="form-group">
@@ -80,8 +83,7 @@
                   <button type="submit" class="btn btn-primary btn-block btn-margin btn-no-left-margin">Sign Up</button>
                 </form>
                 
-                <br />
-                <p>Already a member? <a href="<?php echo url_for('/staff/login.php'); ?>">Log in here</a>.</p>
+                <p>Already a member? <a href="<?php echo url_for('/staff/login.php'); ?>">Log in here</a>.</p><br />
               </div>
             </div>
           </div>

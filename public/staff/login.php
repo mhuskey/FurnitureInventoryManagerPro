@@ -1,9 +1,10 @@
 <?php
   require_once('../../private/initialize.php');
   
-  $errors = [];
+  $errors   = [];
   $username = '';
   $password = '';
+  $failed   = false;
   
   if(is_post_request()) {
     $username = $_POST['username'] ?? '';
@@ -15,6 +16,7 @@
     }
     if(is_blank($password)) {
       $errors[] = "Password cannot be blank.";
+      $failed   = true;
     }
     
     // If there were no errors, try to login
@@ -28,6 +30,7 @@
         redirect_to(url_for('/staff/index.php'));
       } else {
         // username not found or password does not match
+        $failed   = true;
         $errors[] = "Log in was unsuccessful.";
       }
     }
@@ -41,7 +44,7 @@
     <main role="main">
       <section>
         <div class="main-content">
-          <div class="container min-vh-100">
+          <div class="container">
             <div class="row">
               <div class="col align-self-center col-10 offset-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                 <h1 class="text-center">Log In</h1>
@@ -51,7 +54,7 @@
                 <form action="login.php" method="post">
                   <div class="form-group">
                     <label for="loginInputUsername">Username</label>
-                    <input type="text" class="form-control" name="username" autofocus />
+                    <input type="text" class="form-control" name="username" autofocus value="<?php if($failed===true) { echo h($username); } ?>" />
                   </div>
                   
                   <div class="form-group">
