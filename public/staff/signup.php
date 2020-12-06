@@ -47,27 +47,27 @@
                 <form action="<?php echo url_for('/staff/signup.php'); ?>" method="post">
                   <div class="form-group">
                     <label for="inputFirstName">First Name</label>
-                    <input type="text" class="form-control" name="admin[first_name]" autofocus value="<?php if($failed===true) { echo h($admin->first_name); } ?>" />
+                    <input type="text" class="form-control" name="admin[first_name]" <?php if(is_blank($admin->first_name)) { echo "autofocus"; } ?> value="<?php if($failed===true) { echo h($admin->first_name); } ?>" />
                   </div>
                   
                   <div class="form-group">
                     <label for="inputLastName">Last Name</label>
-                    <input type="text" class="form-control" name="admin[last_name]" value="<?php if($failed===true) { echo h($admin->last_name); } ?>" />
+                    <input type="text" class="form-control" name="admin[last_name]" <?php if($failed===true && !is_blank($admin->first_name) && is_blank($admin->last_name)) { echo "autofocus"; } ?> value="<?php if($failed===true) { echo h($admin->last_name); } ?>" />
                   </div>
                   
                   <div class="form-group">
                     <label for="inputEmail">Email Address</label>
-                    <input type="email" class="form-control" name="admin[email]" value="<?php if($failed===true) { echo h($admin->email); } ?>" />
+                    <input type="email" class="form-control" name="admin[email]" <?php if($failed===true && !is_blank($admin->first_name) && !is_blank($admin->last_name) && is_blank($admin->email)) { echo "autofocus"; } ?> value="<?php if($failed===true) { echo h($admin->email); } ?>" />
                   </div>
                   
                   <div class="form-group">
                     <label for="inputUsername">Username</label>
-                    <input type="text" class="form-control" name="admin[username]" value="<?php if($failed===true) { echo h($admin->username); } ?>" />
+                    <input type="text" class="form-control" name="admin[username]" <?php if($failed===true && !is_blank($admin->first_name) && !is_blank($admin->last_name) && !is_blank($admin->email) && is_blank($admin->username)) { echo "autofocus"; } ?> value="<?php if($failed===true) { echo h($admin->username); } ?>" />
                   </div>
                   
                   <div class="form-group">
                     <label for="inputPassword">Password</label>
-                    <input type="password" class="form-control" name="admin[password]" />
+                    <input type="password" class="form-control" name="admin[password]" <?php if($failed===true && !is_blank($admin->first_name) && !is_blank($admin->last_name) && !is_blank($admin->email) && !is_blank($admin->username)) { echo "autofocus"; } ?> />
                   </div>
                   
                   <div class="form-group">

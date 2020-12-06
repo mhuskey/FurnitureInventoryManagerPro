@@ -54,12 +54,12 @@
                 <form action="login.php" method="post">
                   <div class="form-group">
                     <label for="loginInputUsername">Username</label>
-                    <input type="text" class="form-control" name="username" autofocus value="<?php if($failed===true) { echo h($username); } ?>" />
+                    <input type="text" class="form-control" name="username" <?php if($failed===false) { echo "autofocus"; } ?> value="<?php if($failed===true) { echo h($username); } ?>" />
                   </div>
                   
                   <div class="form-group">
                     <label for="loginInputPassword">Password</label>
-                    <input type="password" class="form-control" name="password" />
+                    <input type="password" class="form-control" name="password" <?php if($failed===true) { echo "autofocus"; } ?> />
                   </div>
                   
                   <button type="submit" class="btn btn-primary btn-block btn-margin btn-no-left-margin">Log In</button><br />
