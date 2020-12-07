@@ -24,6 +24,7 @@
       $_SESSION['message'] = 'Sign up successful!';
       redirect_to(url_for('/staff/index.php'));
     } else {
+      // Signup failed, set `$failed` to `true`
       $failed = true;
     }
     

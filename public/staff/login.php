@@ -16,6 +16,7 @@
     }
     if(is_blank($password)) {
       $errors[] = "Password cannot be blank.";
+      // Login failed, set `$failed` to `true`
       $failed   = true;
     }
     
@@ -30,6 +31,7 @@
         redirect_to(url_for('/staff/index.php'));
       } else {
         // username not found or password does not match
+        // Login failed, set `$failed` to `true`
         $failed   = true;
         $errors[] = "Log in was unsuccessful.";
       }

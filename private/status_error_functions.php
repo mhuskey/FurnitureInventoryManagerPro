@@ -20,7 +20,7 @@
         $output .= "<li>" . h($error) . "</li>";
       }
       $output .= "</ul>";
-      $output .= "</div>";
+      $output .= "</div><br />";
     }
     return $output;
   }
