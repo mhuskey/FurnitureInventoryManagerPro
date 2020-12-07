@@ -19,6 +19,8 @@
               <div class="col-sm-10 offset-sm-1 text-center">
                 <h1>Admins</h1>
                 
+                <h5><a class="back-link" href="<?php echo url_for('/staff/index.php'); ?>"> <i class="fas fa-chevron-circle-left"></i> Back to Staff</a></h5><br />
+                
                 <div class="actions">
                   <a href="<?php echo url_for('/staff/admins/new.php'); ?>"><button type="button" class="btn btn-primary">Create Admin</button></a>
                 </div>
@@ -39,15 +41,15 @@
                   
                   <tbody>
                     <?php foreach($admins as $admin) { ?>
-                      <tr>
-                        <td class="text-center align-middle"><?php echo h($admin->id); ?></td>
-                        <td class="text-center align-middle"><?php echo h($admin->first_name); ?></td>
-                        <td class="text-center align-middle"><?php echo h($admin->last_name); ?></td>
-                        <td class="text-center align-middle"><?php echo h($admin->email); ?></td>
-                        <td class="text-center align-middle"><?php echo h($admin->username); ?></td>
-                        <td class="text-center align-middle"><a class="action" href="<?php echo url_for('/staff/admins/show.php?id=' . h(u($admin->id))); ?>">View</a></td>
-                        <td class="text-center align-middle"><a class="action" href="<?php echo url_for('/staff/admins/edit.php?id=' . h(u($admin->id))); ?>">Edit</a></td>
-                        <td class="text-center align-middle"><a class="action" href="<?php echo url_for('/staff/admins/delete.php?id=' . h(u($admin->id))); ?>">Delete</a></td>
+                      <tr class="text-center align-middle">
+                        <td><?php echo h($admin->id); ?></td>
+                        <td><?php echo h($admin->first_name); ?></td>
+                        <td><?php echo h($admin->last_name); ?></td>
+                        <td><?php echo h($admin->email); ?></td>
+                        <td><?php echo h($admin->username); ?></td>
+                        <td><a href="<?php echo url_for('/staff/admins/show.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-primary">View</button></a></td>
+                        <td><a href="<?php echo url_for('/staff/admins/edit.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-info">Edit</button></a></td>
+                        <td><a href="<?php echo url_for('/staff/admins/delete.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
                       </tr>
                     <?php } ?>
                   </tbody>

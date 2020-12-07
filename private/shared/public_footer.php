@@ -3,7 +3,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-10 offset-sm-1 text-center">
-              <p id="copyright">&copy; <?php echo date('Y'); ?> <a href="https://matthewhuskey.com" target="_blank">Matthew Huskey</a></p>
+              <p id="copyright">&copy; <?php echo date('Y'); ?> Matthew Huskey</p>
               
               <ul class="text-center">
                 <li class="footer-list" id="github"><a href="https://github.com/mhuskey" target="_blank"><i class="fab fa-github"></i></a></li>

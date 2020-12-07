@@ -17,20 +17,20 @@
                 <div class="row">
                   <div class="col-sm-10 offset-sm-1">
                     <div class="card border-primary mb-4 text-center">
-                      <h5 class="card-header text-primary">Departments</h5>
+                      <h5 class="card-header text-primary">Furniture</h5>
                       <div class="card-body">
                         <p class="card-text">View and edit all furniture in the Furniture Inventory Manager Pro database.</p>
-                        <a href="<?php echo url_for('/staff/furniture/index.php'); ?>" class="btn btn-primary">Departments</a>
+                        <a href="<?php echo url_for('/staff/furniture/index.php'); ?>" class="btn btn-primary">Furniture</a>
                       </div>
                     </div>
                   </div>
                   
                   <div class="col-sm-10 offset-sm-1">
-                    <div class="card border-success mb-4 text-center">
-                      <h5 class="card-header text-success">Profiles</h5>
+                    <div class="card border-info mb-4 text-center">
+                      <h5 class="card-header text-info">Admins</h5>
                       <div class="card-body">
                         <p class="card-text">View and edit Furniture Inventory Managager Pro admins.</p>
-                        <a href="<?php echo url_for('/staff/admins/index.php'); ?>" class="btn btn-success">Profiles</a>
+                        <a href="<?php echo url_for('/staff/admins/index.php'); ?>" class="btn btn-info">Admins</a>
                       </div>
                     </div>
                   </div>
