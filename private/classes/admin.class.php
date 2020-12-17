@@ -42,8 +42,11 @@
     protected function update() {
       if($this->password != '') {
         // validate password
+        $this->set_hashed_password();
+      } else {
+        // password not being updated, skip hashing and validation
+        $this->password_required = false;
       }
-      $this->set_hashed_password();
       return parent::update();
     }
     

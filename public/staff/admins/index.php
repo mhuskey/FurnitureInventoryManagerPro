@@ -41,12 +41,12 @@
                   
                   <tbody>
                     <?php foreach($admins as $admin) { ?>
-                      <tr class="text-center align-middle">
-                        <td><?php echo h($admin->id); ?></td>
-                        <td><?php echo h($admin->first_name); ?></td>
-                        <td><?php echo h($admin->last_name); ?></td>
-                        <td><?php echo h($admin->email); ?></td>
-                        <td><?php echo h($admin->username); ?></td>
+                      <tr>
+                        <td class="align-middle"><?php echo h($admin->id); ?></td>
+                        <td class="align-middle"><?php echo h($admin->first_name); ?></td>
+                        <td class="align-middle"><?php echo h($admin->last_name); ?></td>
+                        <td class="align-middle"><?php echo h($admin->email); ?></td>
+                        <td class="align-middle"><?php echo h($admin->username); ?></td>
                         <td><a href="<?php echo url_for('/staff/admins/show.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-primary">View</button></a></td>
                         <td><a href="<?php echo url_for('/staff/admins/edit.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-info">Edit</button></a></td>
                         <td><a href="<?php echo url_for('/staff/admins/delete.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>

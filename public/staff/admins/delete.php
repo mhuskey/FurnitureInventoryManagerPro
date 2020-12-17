@@ -42,8 +42,9 @@
                 <h5><?php echo h($admin->full_name()) . " - " . $admin->username; ?></h5><br /><br />
                 
                 <form action="<?php echo url_for('/staff/admins/delete.php?id=' . h(u($admin->id))); ?>" method="post">
-                  <a href="<?php echo url_for('/staff/admins/show.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-secondary btn-margin">Cancel</button></a>
                   <button type="submit" class="btn btn-danger btn-margin" name="commit">Delete Admin</button>
+                  
+                  <a href="<?php echo url_for('/staff/admins/show.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-secondary btn-margin">Cancel</button></a>
                 </form>
               </div>
             </div>

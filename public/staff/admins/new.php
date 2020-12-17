@@ -76,9 +76,12 @@
                   <p>
                     Passwords must be at least 6 characters, and include at least one uppercase letter, lowercase letter, number, and symbol.
                   </p>
-                  <br />
                   
-                  <button type="submit" class="btn btn-primary btn-block btn-margin btn-no-left-margin">Create Admin</button><br />
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-margin btn-no-left-margin">Create Admin</button>
+                    
+                    <a href="<?php echo url_for('/staff/admins/index.php'); ?>"><button type="button" class="btn btn-secondary btn-margin">Cancel</button></a><br />
+                  </div>
                 </form>
               </div>
             </div>

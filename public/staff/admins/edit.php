@@ -41,7 +41,7 @@
           <div class="container min-vh-100">
             <div class="row">
               <div class="col align-self-center col-10 offset-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                <h1>Edit Admin</h1>
+                <h1 class="text-center">Edit Admin</h1>
                 
                 <?php echo display_errors($admin->errors); ?>
                 
@@ -83,7 +83,13 @@
                   </p>
                   <br />
                   
-                  <button type="submit" class="btn btn-primary btn-block btn-margin btn-no-left-margin">Edit Admin</button><br />
+                  <br />
+                  
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-info btn-margin btn-no-left-margin">Edit Admin</button>
+                    
+                    <a href="<?php echo url_for('/staff/admins/index.php'); ?>"><button type="button" class="btn btn-secondary btn-margin">Cancel</button></a><br />
+                  </div>
                 </form>
               </div>
             </div>
