@@ -25,22 +25,22 @@
                 <!-- Admin Card -->
                 <div class="col-sm-10 offset-sm-1">
                   <div class="card border-dark mb-3 text-center">
-                    <h5 class="card-header">First Name</h5>
+                    <h5 class="card-header text-white bg-secondary">First Name</h5>
                     <div class="card-body">
                       <h5 class="card-text"><?php echo h($admin->first_name); ?></h5>
                     </div>
                     
-                    <h5 class="card-header">Last Name</h5>
+                    <h5 class="card-header text-white bg-secondary">Last Name</h5>
                     <div class="card-body">
                       <h5 class="card-text"><?php echo h($admin->last_name); ?></h5>
                     </div>
                     
-                    <h5 class="card-header">Email Address</h5>
+                    <h5 class="card-header text-white bg-secondary">Email Address</h5>
                     <div class="card-body">
                       <h5 class="card-text"><?php echo h($admin->email); ?></h5>
                     </div>
                     
-                    <h5 class="card-header">Username</h5>
+                    <h5 class="card-header text-white bg-secondary">Username</h5>
                     <div class="card-body">
                       <h5 class="card-text"><?php echo h($admin->username); ?></h5>
                     </div>
