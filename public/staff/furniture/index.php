@@ -19,6 +19,8 @@
               <div class="col-sm-10 offset-sm-1 text-center">
                 <h1>Furniture</h1>
                 
+                <h5><a class="back-link" href="<?php echo url_for('/staff/index.php'); ?>"> <i class="fas fa-chevron-circle-left"></i> Back to Staff</a></h5><br />
+                
                 <a href="<?php echo url_for('/staff/furniture/new.php'); ?>"><button type="button" class="btn btn-primary">Create Item</button></a>
                 
                 <table class="table table-striped table-bordered table-hover">
@@ -37,15 +39,15 @@
                   
                   <tbody>
                     <?php foreach($furniture as $item) { ?>
-                      <tr>
+                      <tr class="text-center align-middle">
                         <td class="text-center align-middle"><?php echo h($item->brand); ?></td>
                         <td class="text-center align-middle"><?php echo h($item->item); ?></td>
                         <td class="text-center align-middle"><?php echo h($item->stock); ?></td>
                         <td class="text-center align-middle"><?php echo h($item->category); ?></td>
                         <td class="text-center align-middle"><?php echo h('$' . number_format($item->price, 2)); ?></td>
-                        <td class="text-center align-middle"><a class="action" href="<?php echo url_for('/staff/furniture/show.php?id=' . h(u($item->id))); ?>">View</a></td>
-                        <td class="text-center align-middle"><a class="action" href="<?php echo url_for('/staff/furniture/edit.php?id=' . h(u($item->id))); ?>">Edit</a></td>
-                        <td class="text-center align-middle"><a class="action" href="<?php echo url_for('/staff/furniture/delete.php?id=' . h(u($item->id))); ?>">Delete</a></td>
+                        <td class="align-middle"><a href="<?php echo url_for('/staff/furniture/show.php?id=' . h(u($item->id))); ?>"><button type="button" class="btn btn-primary">View</button></a></td>
+                        <td class="align-middle"><a href="<?php echo url_for('/staff/furniture/edit.php?id=' . h(u($item->id))); ?>"><button type="button" class="btn btn-info">Edit</button></a></td>
+                        <td class="align-middle"><a href="<?php echo url_for('/staff/furniture/delete.php?id=' . h(u($item->id))); ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
                       </tr>
                     <?php } ?>
                   </tbody>

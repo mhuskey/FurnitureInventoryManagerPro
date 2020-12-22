@@ -3,7 +3,7 @@
 <?php require_login(); ?>
 
 <?php
-  $sql  = "SELECT * FROM admins";
+  $sql    = "SELECT * FROM admins";
   $admins = Admin::find_by_sql($sql);
 ?>
 
@@ -21,9 +21,7 @@
                 
                 <h5><a class="back-link" href="<?php echo url_for('/staff/index.php'); ?>"> <i class="fas fa-chevron-circle-left"></i> Back to Staff</a></h5><br />
                 
-                <div class="actions">
-                  <a href="<?php echo url_for('/staff/admins/new.php'); ?>"><button type="button" class="btn btn-primary">Create Admin</button></a>
-                </div>
+                <a href="<?php echo url_for('/staff/admins/new.php'); ?>"><button type="button" class="btn btn-primary">Create Admin</button></a>
                 
                 <table class="table table-striped table-bordered table-hover">
                   <thead class="thead-dark">
@@ -47,9 +45,9 @@
                         <td class="align-middle"><?php echo h($admin->last_name); ?></td>
                         <td class="align-middle"><?php echo h($admin->email); ?></td>
                         <td class="align-middle"><?php echo h($admin->username); ?></td>
-                        <td><a href="<?php echo url_for('/staff/admins/show.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-primary">View</button></a></td>
-                        <td><a href="<?php echo url_for('/staff/admins/edit.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-info">Edit</button></a></td>
-                        <td><a href="<?php echo url_for('/staff/admins/delete.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
+                        <td class="align-middle"><a href="<?php echo url_for('/staff/admins/show.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-primary">View</button></a></td>
+                        <td class="align-middle"><a href="<?php echo url_for('/staff/admins/edit.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-info">Edit</button></a></td>
+                        <td class="align-middle"><a href="<?php echo url_for('/staff/admins/delete.php?id=' . h(u($admin->id))); ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
                       </tr>
                     <?php } ?>
                   </tbody>
