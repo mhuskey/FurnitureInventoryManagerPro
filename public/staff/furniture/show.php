@@ -18,7 +18,7 @@
           <div class="container min-vh-100">
             <div class="row">
               <div class="col-sm-10 offset-sm-1 text-center">
-                <h1>Furniture Item: <?php echo h($furntiure->item); ?></h1>
+                <h1>Furniture Item: <?php echo h($furniture->item); ?></h1>
                 
                 <h5><a class="back-link" href="<?php echo url_for('/staff/furniture/index.php'); ?>"> <i class="fas fa-chevron-circle-left"></i> Back to Furniture</a></h5><br />
                 
