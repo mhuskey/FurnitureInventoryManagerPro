@@ -9,7 +9,7 @@
     // Create record using POST parameters
     $args = $_POST['admin'];
     
-    $admin  = new admin($args);
+    $admin  = new Admin($args);
     $result = $admin->save();
     
     if($result === true) {

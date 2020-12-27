@@ -19,7 +19,7 @@
                     <div class="card border-primary mb-4 text-center">
                       <h5 class="card-header text-primary">Furniture</h5>
                       <div class="card-body">
-                        <p class="card-text">View and edit all furniture in the Furniture Inventory Manager Pro database.</p>
+                        <p class="card-text">View and edit all furniture items in the Furniture Inventory Manager Pro database.</p>
                         <a href="<?php echo url_for('/staff/furniture/index.php'); ?>" class="btn btn-primary">Furniture</a>
                       </div>
                     </div>
