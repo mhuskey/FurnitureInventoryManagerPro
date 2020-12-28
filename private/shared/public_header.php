@@ -38,5 +38,13 @@
           </div>
           <hr><br /><br />
         </div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 offset-sm-1 text-center message">
+              <?php echo display_session_message(); ?>
+            </div>
+          </div>
+        </div>
       </section>
     </main>

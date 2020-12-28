@@ -17,7 +17,7 @@
             <div class="row">
               <div class="col-sm-10 offset-sm-1">
                 <h2>About This App</h2>
-                <p>Furntiure Inventory Manager Pro is a PHP web app, using object-oriented programming to easily view store's inventory. Registered users can log in to create, edit, and delete furniture. They can also upload a CSV file to populate the MySQL database. While this example app uses furniture, it could easily be refactored to support any type of store.</p>
+                <p>Furntiure Inventory Manager Pro is a PHP web app, using object-oriented programming to easily view a store's inventory. Registered users can log in to create, edit, and delete furniture. They can also upload a CSV file to populate the MySQL database. While this example app uses furniture, it could easily be refactored to support any type of store.</p>
                 <br /><br />
                 
                 <h2>About Me</h2>
