@@ -10,11 +10,11 @@
   
   $admin = Admin::find_by_id($id);
   if($admin == false) {
-    redirect_to(url_for('staff/admins/index.php'));
+    redirect_to(url_for('/staff/admins/index.php'));
   }
   
   if(is_post_request()) {
-    // Delete admin
+    // Delete Admin
     $result = $admin->delete();
     $session->message('The admin was deleted successfully.');
     redirect_to(url_for('/staff/admins/index.php'));
@@ -37,8 +37,7 @@
                 
                 <h5><a class="back-link" href="<?php echo url_for('/staff/admins/index.php'); ?>"> <i class="fas fa-chevron-circle-left"></i> Back to Admins</a></h5><br />
                 
-                <p>Are you sure you want to delete this admin?</p><br />
-                
+                <h5>Are you sure you want to delete this admin?</h5>
                 <h5><?php echo h($admin->full_name()) . " - " . $admin->username; ?></h5><br /><br />
                 
                 <form action="<?php echo url_for('/staff/admins/delete.php?id=' . h(u($admin->id))); ?>" method="post">

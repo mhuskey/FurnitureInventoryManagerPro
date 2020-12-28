@@ -6,6 +6,10 @@
   $id    = $_GET['id'] ?? '1';
   
   $admin = Admin::find_by_id($id);
+  
+  if(!$admin) {
+    redirect_to(url_for('/staff/admins/index.php'));
+  }
 ?>
 
 <?php $page_title = 'Show Admin: ' . h($admin->full_name()); ?>

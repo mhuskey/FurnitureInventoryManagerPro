@@ -6,6 +6,10 @@
   $id    = $_GET['id'] ?? '1';
   
   $furniture = Furniture::find_by_id($id);
+  
+  if(!$furniture) {
+    redirect_to(url_for('/staff/furniture/index.php'));
+  }
 ?>
 
 <?php $page_title = 'Show Furniture: ' . h($furniture->item); ?>
