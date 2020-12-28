@@ -87,7 +87,7 @@
                   <br />
                   
                   <div class="text-center">
-                    <button type="submit" class="btn btn-info btn-margin btn-no-left-margin">Update</button>
+                    <button type="submit" class="btn btn-primary btn-margin btn-no-left-margin">Update</button>
                     
                     <a href="<?php echo url_for('/staff/furniture/index.php'); ?>"><button type="button" class="btn btn-secondary btn-margin">Cancel</button></a><br />
                   </div>

@@ -28,7 +28,6 @@
                 <table class="table table-striped table-bordered table-hover">
                   <thead class="thead-dark">
                     <tr>
-                      <th>ID</th>
                       <th>Brand</th>
                       <th>Item</th>
                       <th>Stock</th>
@@ -41,7 +40,6 @@
                   
                   <?php foreach($furniture as $item) { ?>
                     <tr>
-                      <td><?php echo h($item->id); ?></td>
                       <td><?php echo h($item->brand); ?></td>
                       <td><?php echo h($item->item); ?></td>
                       <td><?php echo h($item->stock); ?></td>
