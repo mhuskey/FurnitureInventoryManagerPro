@@ -1,9 +1,13 @@
-<?php require_once('../../../private/initialize.php'); ?>
+<?php
+  require_once('../../../private/initialize.php');
+  
+  $errors = [];
+?>
 
 <?php require_login(); ?>
 
 <?php $page_title = 'Upload Furniture CSV'; ?>
-<?php include(SHARED_PATH . '/public_header.php'); ?>
+<?php include(SHARED_PATH . '/staff_header.php'); ?>
 
 <?php
   if(is_post_request()) {
@@ -65,7 +69,8 @@
         (id, brand, item, stock, category, price, weight_lbs, cubes)";
         $db->query($sql);
         
-        redirect_to(url_for('/furniture_inventory.php'));
+        $session->message("Success! CSV file successfully uploaded.");
+        redirect_to(url_for('/staff/furniture/index.php'));
       }
     }
   }
@@ -80,7 +85,9 @@
               <div class="col-sm-10 offset-sm-1">
                 <h2>Update Inventory</h2>
                 
-                <p>Select and upload a CSV file from your computer to update the <a href="<?php echo url_for('/furniture_inventory.php'); ?>">Furniture Inventory page</a>.</p>
+                <?php echo display_errors($errors); ?>
+                
+                <p>Select and upload a CSV file from your computer to update the <a href="<?php echo url_for('/furniture_inventory.php'); ?>">Furniture Inventory</a> and <a href="<?php echo url_for('/staff/furniture/index.php'); ?>">Furniture Index</a> pages.</p>
                 <br />
                 
                 <h3>Import CSV</h3>

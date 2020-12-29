@@ -21,7 +21,7 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-10 offset-sm-1 text-center align-middle">
-                <h2>Our Furniture Inventory</h2>
+                <h1>Our Furniture Inventory</h1>
               </div>
               
               <div class="col-sm-10 offset-sm-1 text-center align-middle">
