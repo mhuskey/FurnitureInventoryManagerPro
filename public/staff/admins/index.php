@@ -26,20 +26,20 @@
                 <table class="table table-striped table-bordered table-hover">
                   <thead class="thead-dark">
                     <tr>
-                      <th>ID</th>
-                      <th>First Name</th>
-                      <th>Last Name</th>
-                      <th>Email</th>
-                      <th>Username</th>
+                      <th class="align-middle">ID</th>
+                      <th class="align-middle">First Name</th>
+                      <th class="align-middle">Last Name</th>
+                      <th class="align-middle">Email</th>
+                      <th class="align-middle">Username</th>
                       <th>&nbsp;</th>
                       <th>&nbsp;</th>
                       <th>&nbsp;</th>
                     </tr>
                   </thead>
                   
-                  <tbody>
+                  <tbody class="align-middle">
                     <?php foreach($admins as $admin) { ?>
-                      <tr>
+                      <tr class="align-middle">
                         <td class="align-middle"><?php echo h($admin->id); ?></td>
                         <td class="align-middle"><?php echo h($admin->first_name); ?></td>
                         <td class="align-middle"><?php echo h($admin->last_name); ?></td>

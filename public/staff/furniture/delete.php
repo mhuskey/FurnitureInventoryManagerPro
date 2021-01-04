@@ -37,8 +37,8 @@
                 
                 <h5><a class="back-link" href="<?php echo url_for('/staff/furniture/index.php'); ?>"> <i class="fas fa-chevron-circle-left"></i> Back to Furniture Items</a></h5><br />
                 
-                <h5>Are you sure you want to delete this furniture item?</h5>
-                <h5>Furniture Item: <?php echo h($furniture->item); ?></h5><br /><br />
+                <h5>Are you sure you want to delete this furniture item?</h5><br />
+                <h3><?php echo h($furniture->brand) . ': ' . h($furniture->item); ?></h3><br /><br />
                 
                 <form action="<?php echo url_for('/staff/furniture/delete.php?id=' . h(u($furniture->id))); ?>" method="post">
                   <button type="submit" class="btn btn-danger btn-margin" name="commit">Delete Item</button>

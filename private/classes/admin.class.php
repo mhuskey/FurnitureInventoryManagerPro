@@ -75,8 +75,8 @@
       
       if(is_blank($this->username)) {
         $this->errors[] = "Username cannot be blank.";
-      } elseif(!has_length($this->username, array('min' => 8, 'max' => 255))) {
-        $this->errors[] = "Username must be between 8 and 255 characters.";
+      } elseif(!has_length($this->username, array('min' => 6, 'max' => 255))) {
+        $this->errors[] = "Username must be between 6 and 255 characters.";
       } elseif(!has_unique_username($this->username, $this->id ?? 0)) {
         $this->errors[] = "Username already taken. Try a different, unique username.";
       }
