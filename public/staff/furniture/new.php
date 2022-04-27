@@ -43,7 +43,7 @@
                 <form action="<?php echo url_for('/staff/furniture/new.php'); ?>" method="post">
                   <div class="form-group">
                     <label for="inputFirstName">Brand</label>
-                    <input type="text" class="form-control" name="furniture[brand]" value="<?php echo h($furniture->brand); ?>" />
+                    <input type="text" class="form-control" name="furniture[brand]" <?php echo "autofocus"; ?> value="<?php echo h($furniture->brand); ?>" />
                   </div>
                   
                   <div class="form-group">
